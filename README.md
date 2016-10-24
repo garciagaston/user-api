@@ -40,6 +40,12 @@ Parameters:
 Parameters
 - userid: integer
 
+## UNIT TEST
+```sh
+$ cd user-api/webroot
+$ php phpunit.phar Tests/UserApiTest.php
+```
+
 ## API URL:
 127.0.0.1:8000
 
