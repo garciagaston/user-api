@@ -41,7 +41,7 @@ Parameters
 - userid: integer
 
 ## API URL:
-127.0.0.1:8080
+127.0.0.1:8000
 
 ## PHP MY ADMIN:
 127.0.0.1:8181
