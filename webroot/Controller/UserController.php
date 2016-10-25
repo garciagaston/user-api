@@ -15,8 +15,8 @@ class UserController implements ApiController{
             parse_str(file_get_contents("php://input"),$_PUT);
 
             $name = isset($_PUT['name']) ? $_PUT['name'] : '';
-            $picture = isset($_PUT['picture']) ? $_PUT['picture'] : '';
             $address = isset($_PUT['address']) ? $_PUT['address'] : '';
+            $picture = self::_uploadUserPicture();
             $result = User::updateUser($id, $name, $picture, $address);
             echo json_encode($result);
         }
